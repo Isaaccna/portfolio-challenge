@@ -59,3 +59,79 @@ header button {
   margin-inline: auto;
   width: 28.5rem;
 }
+.quality {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.quality div {
+  border-radius: 0.8rem;
+  position: relative;
+}
+.quality img {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.quality div h3 {
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700px; 
+  font-size:2.4rem;
+  position: absolute;
+  bottom: 2rem;
+  left:2rem;
+}
+
+#graphic {
+  background-color: #755cde;
+  width: 34.3rem;
+  height: 36.4rem;
+  
+}
+#graphic img {
+
+  width: 12.8rem;
+  height: 19.2rem;
+}
+
+#user, #apps {
+  width: 15.9rem;
+  height: 18.2rem;
+}
+
+#user {
+  background-color: #F6A560;
+}
+#apps { 
+  background-color: #F39E9E;
+}
+#apps img, #user img {
+  width: 6.4rem;
+ height: 6.4rem;
+}
+#illustration , #photography , 
+#motion {
+  width: 34.3rem;
+  height: 15.8rem;
+}
+#illustration  img, #photography img , 
+#motion img {
+  width: 12.8rem;
+  height: 6.4rem;
+}
+#illustration {
+  background-color: #EB7565;
+}
+#photography {
+  background-color: #61C4B7;
+}
+#motion {
+  background-color: #552049;
+}
+
+
+
