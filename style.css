@@ -12,8 +12,29 @@ body {
   height: 100%;
   background-color: #fff7f0;
 }
+.red-button {
+  width: 176px;
+  height: 44px;
+  background-color: #eb7565;
+  border-radius: 2.8rem;
+  border-style: none;
+  color: #fff7f0;
+  font-size: 1.4rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+}
+.black-button {
+  color: #fff7f0;
+  font-size: 1.4rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  background-color: black;
+  width: 17rem;
+  height: 4rem;
+  border-radius: 4.2rem;
+}
 /* ----- HEADER ------------*/
-header {
+header, footer {
   margin-top: 1.2rem;
   margin-bottom: 3.2rem;
   margin-inline: 1rem;
@@ -22,20 +43,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header img {
+header img, footer img {
   width: 4.4rem;
   height: 4.4rem;
 }
-header button {
-  color: #fff7f0;
-  font-size: 1.4rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 700px;
-  background-color: black;
-  width: 17rem;
-  height: 4rem;
-  border-radius: 4.2rem;
-}
+
 /* ----- SECTIONS -------------------------------- */
 
 .intro {
@@ -66,6 +78,7 @@ header button {
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
+  margin-bottom: 8rem;
 }
 .quality div {
   border-radius: 0.8rem;
@@ -79,59 +92,148 @@ header button {
 .quality div h3 {
   color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 700px; 
-  font-size:2.4rem;
+  font-weight: 700;
+  font-size: 2.4rem;
   position: absolute;
   bottom: 2rem;
-  left:2rem;
+  left: 2rem;
 }
 
 #graphic {
   background-color: #755cde;
   width: 34.3rem;
   height: 36.4rem;
-  
 }
 #graphic img {
-
   width: 12.8rem;
   height: 19.2rem;
 }
 
-#user, #apps {
+#user,
+#apps {
   width: 15.9rem;
   height: 18.2rem;
 }
 
 #user {
-  background-color: #F6A560;
+  background-color: #f6a560;
 }
-#apps { 
-  background-color: #F39E9E;
+#apps {
+  background-color: #f39e9e;
 }
-#apps img, #user img {
+#apps img,
+#user img {
   width: 6.4rem;
- height: 6.4rem;
+  height: 6.4rem;
 }
-#illustration , #photography , 
+#illustration,
+#photography,
 #motion {
   width: 34.3rem;
   height: 15.8rem;
 }
-#illustration  img, #photography img , 
+#illustration img,
+#photography img,
 #motion img {
   width: 12.8rem;
   height: 6.4rem;
 }
 #illustration {
-  background-color: #EB7565;
+  background-color: #eb7565;
 }
 #photography {
-  background-color: #61C4B7;
+  background-color: #61c4b7;
 }
 #motion {
   background-color: #552049;
 }
+/* -------- ABOUT SECTION -------- */
+.about {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.about img {
+  width: 300px;
+  height: 300px;
+  margin-inline: auto;
+  margin-bottom: 3.5rem;
+}
+.about h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  width: 34.3rem;
+  margin-inline: auto;
+  margin-bottom: 2.4rem;
+}
+.about p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #7a746e;
+  line-height: 2.6rem;
+  width: 34.3rem;
+  margin-inline: auto;
+  margin-bottom: 3.2rem;
+}
 
+/* ----- WORK SECTION ----- */
+.work {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.work h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.slidesshow {
+  margin-bottom: 3.2rem;
+}
+.slides {
+  width: 27rem;
+  height: 18rem;
+}
+.arrows {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.arrows img {
+  background-color: black;
+  padding: 2rem;
+  border-radius: 9rem;
+}
 
+/*---- CONTACT ----*/
+.contact {
+  background-color: black;
+  border-radius: 1rem;
+  text-align: center;
+  margin-inline: 1.5rem;
+  margin-bottom: 4rem;
 
+  width: 34.3rem;
+  height: 35.2rem;
+}
+.contact h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #fff7f0;
+  margin-bottom: 2.4rem;
+  padding-top: 4.9rem;
+}
+.contact p {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #fff7f0;
+  width: 29.5rem;
+  margin-inline: auto;
+  margin-bottom: 3.2rem;
+}
