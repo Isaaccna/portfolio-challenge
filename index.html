@@ -32,40 +32,48 @@
         </p>
       </section>
       <section class="quality">
-        <div id="graphic">
-          <img
-            src="./assets/pattern-graphic-design.svg"
-            alt="graphic design illustration"
-          />
-          <h3>Graphic Design</h3>
+        <div class="part1">
+          <div id="graphic">
+            <img
+              src="./assets/pattern-graphic-design.svg"
+              alt="graphic design illustration"
+            />
+            <h3>Graphic Design</h3>
+          </div>
         </div>
-        <div id="user">
-          <img src="./assets/pattern-ui-ux.svg" alt="UI/UX illustration" />
-          <h3>UI/UX</h3>
+       
+        <div class="part2">
+          <div id="user">
+            <img src="./assets/pattern-ui-ux.svg" alt="UI/UX illustration" />
+            <h3>UI/UX</h3>
+          </div>
+          <div id="apps">
+            <img src="./assets/pattern-apps.svg" alt="apps illustration" />
+            <h3>Apps</h3>
+          </div>
+          <div id="illustration">
+            <img src="./assets/pattern-illustrations.svg" alt="illustration" />
+            <h3>Illustrations</h3>
+          </div>
         </div>
-        <div id="apps">
-          <img src="./assets/pattern-apps.svg" alt="apps illustration" />
-          <h3>Apps</h3>
-        </div>
-        <div id="illustration">
-          <img src="./assets/pattern-illustrations.svg" alt="illustration" />
-          <h3>Illustrations</h3>
-        </div>
-        <div id="photography">
-          <img
-            src="./assets/pattern-photography.svg"
-            alt="Photography illustration"
-          />
-          <h3>Photography</h3>
-        </div>
+     <div class="part3">
+      <div id="photography">
+        <img
+          src="./assets/pattern-photography.svg"
+          alt="Photography illustration"
+        />
+        <h3>Photography</h3>
+      </div>
 
-        <div id="motion">
-          <img
-            src="./assets/pattern-motion-graphics.svg"
-            alt="motion graphics illustration"
-          />
-          <h3>Motion Graphics</h3>
-        </div>
+      <div id="motion">
+        <img
+          src="./assets/pattern-motion-graphics.svg"
+          alt="motion graphics illustration"
+        />
+        <h3>Motion Graphics</h3>
+      </div>
+     </div>
+      
       </section>
       <section class="about">
         <div class="image">
@@ -113,8 +121,8 @@
 </div>
         
         <div class="arrows">
-          <img src="./assets/icon-arrow-left.svg" alt="arrow left" />
-          <img src="./assets/icon-arrow-right.svg" alt="arrow right" />
+          <img src="./assets/icon-arrow-left.svg" alt="arrow left" onclick="plusDivs(-1)" />
+          <img src="./assets/icon-arrow-right.svg" alt="arrow right" onclick="plusDivs(1)" />
         </div>
       </section>
       <section class="contact">
@@ -132,5 +140,7 @@
       <img src="./assets/logo.svg" alt="logo" />
       <button class="black-button">Free Consultation</button>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

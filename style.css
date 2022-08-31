@@ -34,7 +34,8 @@ body {
   border-radius: 4.2rem;
 }
 /* ----- HEADER ------------*/
-header, footer {
+header,
+footer {
   margin-top: 1.2rem;
   margin-bottom: 3.2rem;
   margin-inline: 1rem;
@@ -43,7 +44,8 @@ header, footer {
   justify-content: space-between;
   align-items: center;
 }
-header img, footer img {
+header img,
+footer img {
   width: 4.4rem;
   height: 4.4rem;
 }
@@ -52,7 +54,7 @@ header img, footer img {
 
 .intro {
   text-align: center;
-  margin-inline: 1.6rem;
+  margin-inline: auto;
   margin-bottom: 3.2rem;
 }
 .intro h1 {
@@ -61,6 +63,7 @@ header img, footer img {
   font-weight: 700;
   line-height: 4.5rem;
   margin-bottom: 1.6rem;
+  margin-inline: auto;
 }
 .intro p {
   font-family: 'Plus Jakarta Sans';
@@ -72,15 +75,25 @@ header img, footer img {
   width: 28.5rem;
 }
 .quality {
+  margin-bottom: 8rem;
+  
+}
+.quality,
+.part1,
+.part2,
+.part3 {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
-  margin-bottom: 8rem;
 }
-.quality div {
+#graphic,
+#user,
+#apps,
+#illustration,
+#photography,
+#motion {
   border-radius: 0.8rem;
   position: relative;
 }
@@ -191,6 +204,11 @@ header img, footer img {
 }
 .slidesshow {
   margin-bottom: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden;
 }
 .slides {
   width: 27rem;
@@ -213,7 +231,7 @@ header img, footer img {
   background-color: black;
   border-radius: 1rem;
   text-align: center;
-  margin-inline: 1.5rem;
+  margin-inline: auto;
   margin-bottom: 4rem;
 
   width: 34.3rem;
@@ -236,4 +254,61 @@ header img, footer img {
   width: 29.5rem;
   margin-inline: auto;
   margin-bottom: 3.2rem;
+}
+
+/* MEDIA SCREEN --- */
+@media screen and (min-width: 700px) {
+  header,
+  footer {
+    padding-inline: 2rem;
+  }
+
+  .intro p {
+    width: 50rem;
+  }
+  .quality {
+   
+  }
+  .part1,
+  .part2,
+  .part3 {
+    flex: 1;
+  }
+  #graphic {
+    width: 33.3rem;
+  }
+  #user,
+  #apps {
+    width: 15.5rem;
+  }
+  #illustration,
+#photography,
+#motion {
+  width: 33.3rem;
+}
+.about {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.slidesshow {
+  gap: 3rem;
+}
+
+.slides {
+  width: 54rem;
+  height: 36rem;
+}
+.contact {
+  width: 69rem;
+  height: 35.2rem;
+}
+.contact p {
+  width: 54rem;
+  height: 8.4rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
 }
