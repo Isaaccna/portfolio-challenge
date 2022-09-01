@@ -76,7 +76,6 @@ footer img {
 }
 .quality {
   margin-bottom: 8rem;
-  
 }
 .quality,
 .part1,
@@ -171,12 +170,15 @@ footer img {
   margin-inline: auto;
   margin-bottom: 3.5rem;
 }
+.text {
+  width: 34.3rem;
+}
 .about h2 {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   font-size: 2.6rem;
   line-height: 3.2rem;
-  width: 34.3rem;
+  
   margin-inline: auto;
   margin-bottom: 2.4rem;
 }
@@ -186,7 +188,6 @@ footer img {
   font-size: 1.6rem;
   color: #7a746e;
   line-height: 2.6rem;
-  width: 34.3rem;
   margin-inline: auto;
   margin-bottom: 3.2rem;
 }
@@ -257,18 +258,45 @@ footer img {
 }
 
 /* MEDIA SCREEN --- */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   header,
+  main,
   footer {
-    padding-inline: 2rem;
+    margin-inline: 5rem;
+  }
+  header img,
+  footer img {
+    width: 6rem;
+    height: 6rem;
+  }
+  header {
+    margin-top: 3.4rem;
+  }
+  .black-button,
+  .red-button {
+    width: 22.8rem;
+    height: 5.6rem;
+    font-size: 1.6rem;
+  }
+
+  .intro h1 {
+    font-size: 4.4rem;
   }
 
   .intro p {
     width: 50rem;
+    font-size: 1.8rem;
   }
-  .quality {
-   
+  header,
+  .intro {
+    margin-bottom: 6.4rem;
   }
+  .quality,
+  .about,
+  .work {
+    margin-bottom: 12rem;
+  }
+
   .part1,
   .part2,
   .part3 {
@@ -282,33 +310,119 @@ footer img {
     width: 15.5rem;
   }
   #illustration,
-#photography,
-#motion {
-  width: 33.3rem;
-}
-.about {
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.slidesshow {
-  gap: 3rem;
+  #photography,
+  #motion {
+    width: 33.3rem;
+  }
+  .about {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about h2,
+  .work h2,
+  .contact h2 {
+    font-size: 3.2rem;
+  }
+  .about p {
+    font-size: 1.8rem;
+  }
+  .slidesshow {
+    gap: 3rem;
+  }
+
+  .slides {
+    width: 54rem;
+    height: 36rem;
+  }
+  .contact {
+    width: 69rem;
+    height: 35.2rem;
+  }
+  .contact p {
+    width: 54rem;
+    height: 8.4rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
 }
 
-.slides {
-  width: 54rem;
-  height: 36rem;
+/* MEDIA SCREEN --- */
+@media screen and (min-width: 900px) {
+  header,
+  footer,
+  main {
+    margin-inline: 10rem;
+  }
+  .black-button:hover {
+    background-color: #755cde;
+  }
+  .red-button:hover {
+    background-color: #F6A560;
+  }
+  .intro h1 {
+    font-size: 5.6rem;
+  }
+  .intro p {
+    width: 73rem;
+  }
+  .quality {
+    gap: 0.5rem;
+  }
+
+  part1,
+  .part2,
+  .part3 {
+    flex: 1;
+  }
+  #graphic {
+    width: 35.4rem;
+    height: 36.4rem;
+  }
+  #user,
+  #apps {
+    width: 16.4rem;
+    height: 18.2rem;
+  }
+
+  #illustration,
+  #motion {
+    width: 35.4rem;
+    height: 15.8rem;
+  }
+  #photography {
+    width: 35.4rem;
+    height: 18.2rem;
+  }
+
+  .about {
+    gap: 12.5rem;
+    justify-content: center;
+  }
+  .about img {
+    width: 44.5rem;
+    height: 44.5rem;
+  }
+  .text {
+    width: 54rem;
+  }
+  .text h2 {
+    font-size: 4rem;
+  }
+  .contact {
+    width: 111rem;
+    height: 32rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contact-message {
+    text-align: left;
+  }
+  .contact-message h2 {
+    font-size: 4rem;
+  }
 }
-.contact {
-  width: 69rem;
-  height: 35.2rem;
-}
-.contact p {
-  width: 54rem;
-  height: 8.4rem;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-}
-}
+
