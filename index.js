@@ -23,5 +23,22 @@ function showDivs(n) {
   }
 }
 
+document.onkeydown = function(e) {
+  switch (e.keyCode) {
+      case 37:
+          //left
+          e.preventDefault();
+          slideIndex--;
+          showDivs(slideIndex);
+          break;
+      case 39:
+          //right
+          e.preventDefault();
+          slideIndex++;
+          showDivs(slideIndex);
+          break;
+  }
+}
+
 
 
